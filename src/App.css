@@ -7,6 +7,106 @@
   pointer-events: none;
 }
 
+.container{
+  min-width: 100%;
+  min-height:100vh ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEA1A1;
+
+}
+.container-items{
+  width: 40%;
+  border-radius:7px ;
+  background-color: #F0EDD4;
+  box-shadow: 0px 0px 58px -19px rgba(222,222,222,0.81);
+  -webkit-box-shadow: 0px 0px 58px -19px rgba(222,222,222,0.81);
+  -moz-box-shadow: 0px 0px 58px -19px rgba(222,222,222,0.81);
+  padding: 10px;
+}
+.container-items .questions{
+  border: 1px solid rgba(145, 143, 143, 0.349);
+  padding: 10px 0;
+  border-radius: 4px;
+  box-shadow: 1px 2px 48px -16px rgba(102,102,102,0.81);
+  -webkit-box-shadow: 1px 2px 48px -16px rgba(102,102,102,0.81);
+  -moz-box-shadow: 1px 2px 48px -16px rgba(102,102,102,0.81);
+  
+}
+.container-items h1{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.btn{
+  margin: 1.5rem 0;
+}
+.btn button,.next-btn button, #next-button{
+  border: none;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.85rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 1px 6px 17px 0px rgba(102,102,102,0.75);
+  -webkit-box-shadow: 1px 6px 17px 0px rgba(102,102,102,0.75);
+  -moz-box-shadow: 1px 6px 17px 0px rgba(102,102,102,0.75);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+ 
+}
+.btn button:active{
+  background-color: #FEA1A1;
+ 
+}
+.checked{
+  background-color: #fc8b8b;
+}
+.next-btn button ,#next-button{
+  background-color: #61dafb;
+}
+.next-btn button:hover ,#next-button:hover{
+  background-color: #23c3f0;
+}
+.show-score{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.congratulations{
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #fc8b8b;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-bottom: 0.85rem;
+}
+
+
+@media  (max-width:700px) {
+  .container-items{
+    width: 80%;
+  }
+  .container-items h1{
+    font-size: 1.2rem;
+  }
+  
+}
+@media (max-width:300px) {
+  .container-items h1{
+    font-size: 1rem;
+  }
+  .congratulations{
+    font-size: 1.5rem;
+  }
+ 
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
